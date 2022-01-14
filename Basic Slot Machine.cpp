@@ -4,7 +4,6 @@
 //If the symbols in all three columns are the same, display a message indicating that the user has hit the jackpot
 //If the symbols in only two columns are the same, provide a smaller jackpot prize
 
-
 #include <iostream>
 #include <string>
 #include <ctime>
@@ -14,7 +13,6 @@ using namespace std;
 
 const char [26] = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
 char fruit_machinalphabete[3][3];
-
 
 void generator()
 //Generates a 3x3 array for the slot machine 
@@ -26,7 +24,6 @@ void generator()
 			int roll = rand() % 26;        //Generates a random string of characters
 			char x = alphabet[roll];
 			cout << x << " ";
-
 		}
 		cout << endl;
 	}
@@ -48,9 +45,6 @@ void output()
 		for (int j = 0; j < 3; j++)
 		{
 			cout << fruit_machine[i][j] << "  ";
-
-
-
 		}
 
 		cout << endl << endl;
